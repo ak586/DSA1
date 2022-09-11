@@ -32,7 +32,7 @@ int main()
     root->left->right = new Node(-1);
     root->right->left = new Node(10);
     root->right->right = new Node(11);
-
+    inorder(root);
     return 0;
 }
 
@@ -52,7 +52,8 @@ void inorder(Node *root)
             curr = curr->left;
         }
         curr = st.top();
+        st.pop();
         cout << curr->val << " ";
-        curr->right;
+        curr = curr->right;
     }
 }
