@@ -16,26 +16,23 @@ Constraints :
 0 <= N <= 1000
 */
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int recursiveMultiplication(int M,int N)
+int recursiveMultiplication(int M, int N)
 {
 
-	if(N==0)
-		return 0;
-	else
-		return M+recursiveMultiplication(M,N-1);
+    if (N == 0)
+        return 0;
+    else
+        return M + recursiveMultiplication(M, N - 1);
 }
 
-int main(){
-int m;
-int n;
-cin>>m>>n;
-cout<<recursiveMultiplication(m,n)<<endl;
-return 0;
+int main()
+{
+    int m;
+    int n;
+    cin >> m >> n;
+    cout << recursiveMultiplication(m, n) << endl;
+    return 0;
 }
-
-
-
-
