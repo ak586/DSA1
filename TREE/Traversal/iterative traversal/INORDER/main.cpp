@@ -16,10 +16,6 @@ struct Node
     }
 };
 
-/*
-! time complexity O(n)
-! Aux space complexity O(h)
-*/
 void inorder(Node *root);
 
 int main()
