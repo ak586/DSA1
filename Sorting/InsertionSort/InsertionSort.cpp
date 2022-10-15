@@ -3,15 +3,18 @@ using namespace std;
 //place elements in it's correct position
 void insertionSort(int arr[],int size){ 
 
-	for(int i=0; i<size; i++){
-		for(int j=0; j<size-1; j++){
-			if(arr[j]>arr[j+1])
-				swap(arr[j],arr[j+1]);
-		}
+	for(int i=1; i<size; i++){
+		int temp=arr[i];
+		int j=i-1;
+		while(j>=0&& arr[j]>temp){
+			arr[j+1]=arr[j];
+	j--;	}		
+		arr[j+1]=temp;
+	}
 	}
 
 
-}
+
 
 int main(){
 
