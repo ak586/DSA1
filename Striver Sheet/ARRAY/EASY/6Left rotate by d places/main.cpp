@@ -42,7 +42,7 @@ void reverse(int arr[], int start, int end)
 void LeftRotate2(int arr[], int n, int k)
 {
     if (k >= n)
-        k = n % k;
+        k =  k%n;
 
     // step 1 reverse complete array
     reverse(arr, 0, n - 1);
