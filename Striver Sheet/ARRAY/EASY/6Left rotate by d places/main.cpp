@@ -6,7 +6,7 @@ using namespace std;
 void LeftRotate1(int arr[], int size, int k)
 {
     if (k >= size)
-        k = size % k;
+        k =   k%size;
     int temp[k];
     int i;
     // step 1
